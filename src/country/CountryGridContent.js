@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
 class CountryGrid extends Component {
+  countryName() {
+    const name = this.props.country.name
+  }
+
   render() {
     return (
-      <article className="white-panel">
+      <article className="white-panel" /*onClick={}*/>
         <h5>
           Country: <strong>{this.props.country.name}</strong>
         </h5>
